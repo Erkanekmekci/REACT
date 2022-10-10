@@ -1,5 +1,6 @@
 
-import "./Buton.css"
+// import "./Buton.css"
+import ButonStyle from "./buton.module.css"
 
 
 const Buton =({btn}) =>{
