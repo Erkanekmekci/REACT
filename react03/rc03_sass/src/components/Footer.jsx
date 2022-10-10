@@ -1,3 +1,5 @@
+import Footer
+
 const Footer = () => {
   return (
     <footer>
