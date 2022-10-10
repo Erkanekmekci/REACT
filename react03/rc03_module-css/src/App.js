@@ -1,5 +1,20 @@
+import Card from "./components/card/card"
+import data from "./data";
+
+
 function App() {
-  return <h1>APP</h1>;
+  return (
+    <>
+    {data.map((item) =>{
+      const {id, language,img,btnName} = item
+      return( <Card language={language} img ={img} btn ={btnName}/>
+
+        
+      )
+    })}
+     
+    </>
+  )
 }
 
 export default App;
