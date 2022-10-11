@@ -1,15 +1,18 @@
-import Card from "./components/card/card";
-import data from "./data";
+// import Card from "./components/card/card";
+// import data from "./data";
+import "./Card.css";
 
-function card({language, btn, img}) {
+// const Card = (props) => {
+//   console.log(props);
+// const {language,btn,img}= props; ==>birinci yol
+const Card = ({ language, btn, img }) => {
   return (
-    <div className="title">
-<h1>{language}</h1>
-<img className="images" src="{img}" alt="img" />
-<Button btn ={btn}/>
-
+    <div>
+      <h1>{language}</h1>
+      <img src={img} alt="img" />
+      <Buton btn={btn} />
     </div>
   )
 }
 
-export default card
+export default Card
