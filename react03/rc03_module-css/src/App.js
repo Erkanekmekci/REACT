@@ -1,29 +1,19 @@
-// import Card from "./components/card/card"
+import Card from "./components/card/Card";
 import data from "./util/data";
 
-import Card from "./components/card/Card";
-
-
 function App() {
+  // JS
+
   return (
+    //JSX
     <>
       {data.map((item) => {
-        const { id, language, img, btnName } = item;
-        return (<Card key={id} language={language} img={img} btn={btnName} />
-
-        )
-
+        console.log(item);
+        const { id, language, img, btnName } = item; //! destr.
+        return <Card key={id} language={language} img={img} btn={btnName} />;
       })}
-
-
     </>
-
-
   );
-
-
-
-
-};
+}
 
 export default App;
