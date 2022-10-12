@@ -1,10 +1,15 @@
-
+import data from "../../assests/data"
 import React from 'react'
 import "./Main.css"
+import Card from "../Card/Card"
+
 
 function Main() {
   return (
-    <div>Main</div>
+    <div className="container_main">
+      {data.map((a) => <Card {...a}/>)}
+
+    </div>
   )
 }
 
