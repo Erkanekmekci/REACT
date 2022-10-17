@@ -1,6 +1,7 @@
 import { useState } from "react";
 import LifeCycleMethods from "./components/LifeCycleMethods";
 import UseEffectHook from "./components/UseEffectHook";
+import User from "./components/user"
 
 function App() {
   const [show, setShow] = useState(true);
